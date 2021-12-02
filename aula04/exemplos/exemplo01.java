@@ -1,9 +1,9 @@
-package exemplos;
+package Exemplos;
 
 /**
  * exemplo01
  */
-public class exemplo01 {
+public class Exemplo01 {
 
     public static void main(String[] args) {
         double nota;

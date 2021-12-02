@@ -1,6 +1,6 @@
-package exemplos;
+package Exemplos;
 
-public class exemplo02 {
+public class Exemplo02 {
     public static void main(String[] args) {
 
         // printf(FORMATO, DADOS)
