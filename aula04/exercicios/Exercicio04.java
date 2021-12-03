@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercicio04 {
     public static void main(String[] args) {
-       Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
         double salarioBruto, prestacao, limite;
 
         System.out.println("digite o salário bruto: ");
@@ -14,7 +14,7 @@ public class Exercicio04 {
 
         limite = salarioBruto * 0.3;
 
-        if (prestacao <= limite ) {
+        if (prestacao <= limite) {
             System.out.println("Empretimo aprovado");
         } else {
             System.out.println("Emprestimo reprovado");
@@ -22,7 +22,6 @@ public class Exercicio04 {
 
         entrada.close();
 
-        
     }
 
 }
