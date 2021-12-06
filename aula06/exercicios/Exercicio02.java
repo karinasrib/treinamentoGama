@@ -14,6 +14,7 @@ public class Exercicio02 {
 
         System.out.println("O menor numero é " + menor(num1, num2, num3));
         
+
         entrada.close();
 
     }
