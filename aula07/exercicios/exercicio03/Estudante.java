@@ -9,8 +9,9 @@ public class Estudante extends Pessoa {
 
     }
 
-    public String getDados() {
-        return super.getDados() + " - " + curso;
+    
+    public String toString() {
+        return super.toString() + " - " + curso;
 
     }
 }
