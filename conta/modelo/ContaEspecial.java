@@ -1,7 +1,5 @@
 package modelo;
 
-import java.lang.annotation.Retention;
-
 public class ContaEspecial extends Conta {
     private double limite;
 

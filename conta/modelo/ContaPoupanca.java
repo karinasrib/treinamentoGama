@@ -1,13 +1,15 @@
 package modelo;
 
-public class ContaPoupanca extends Conta {
-    private double taxaOperacao;
+public class ContaPoupanca extends Conta { 
+    private static double taxaOperacao = 0.2; // static - atributo da classe e não de cada objetos
 
     public ContaPoupanca(int numero) {
         super(numero);
+        
+        
     }
 
-    public void setTaxaOperacao(double novaTaxa) {
+    public static void setTaxaOperacao(double novaTaxa) { // static método da classe
         taxaOperacao = novaTaxa;
     }
 
