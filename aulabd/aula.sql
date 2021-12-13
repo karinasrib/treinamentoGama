@@ -53,3 +53,31 @@ set telefone = '(21) 12345-1234'
 where codigo = 4;
 
 -- SQL = Linguagem de Consulta Estruturada
+-- criar tabela veiculo
+-- foreign key = chave extrangeira, ligar coma outra tabela
+-- references = indica com qual tabela e campo a ligação é feita
+
+create table veiculo(
+	codigo integer not null auto_increment,
+    marca varchar(20),
+    modelo varchar(40),
+    proprietario integer,
+	constraint pk_veiculo primary key(codigo),
+    constraint fk_veiculo_cliente foreign key (proprietario) references cliente(codigo)
+);
+
+-- inserir dados de veiculos
+insert into veiculo values (null, 'VW', 'Gol', 1);
+insert into veiculo values (null, 'Chevrolet', 'Astra', 1);
+insert into veiculo values (null, 'BMW', 'X1', 2);
+
+-- buscar todos os dados de todos os veículos
+select *
+from veiculo;
+
+-- quais os nomes dos proprietarios de cada veiculo?
+-- inner join = junção das tabelas onde os caompos são iguais
+
+select marca, modelo, nome
+from veiculo inner join cliente on veiculo.proprietario = cliente.codigo;
+
