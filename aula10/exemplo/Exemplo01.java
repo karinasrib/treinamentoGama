@@ -17,10 +17,10 @@ public class Exemplo01 {
             System.out.println("Você digitou " + numero);
         } catch (InputMismatchException e) { // capturar o erro (Exception)
             System.out.println("Valor inválido.");
-        } catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.out.println("Erro de conversão.");
             System.out.println(e.getMessage());
-        } catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Erro.");
         } finally {
             System.out.println("Fechando...");
@@ -29,7 +29,6 @@ public class Exemplo01 {
 
         System.out.println("Fim do programa.");
 
-        
     }
 
 }
